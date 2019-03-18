@@ -1,0 +1,23 @@
+{
+  "name": "inventory-mgmt",
+  "version": "1.0.0",
+  "description": "Node and MySQL inventory management system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3mhurley/Inventory-Mgmt.git"
+  },
+  "author": "3mhurley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3mhurley/Inventory-Mgmt/issues"
+  },
+  "homepage": "https://github.com/3mhurley/Inventory-Mgmt#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "mysql": "^2.16.0"
+  }
+}
