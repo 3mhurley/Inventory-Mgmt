@@ -1,10 +1,10 @@
 // Node Packages
 const mysql = require('mysql');
 const inquirer = require('inquirer');
-import { un, pw } from 'lib';
+var {un,pw} = require(__dirname + '\\lib.js');
 
 // Connection information for the sql database
-export const connection = mysql.createConnection({
+const connection = mysql.createConnection({
     host: 'localhost',
 
     // Port
@@ -20,13 +20,7 @@ export const connection = mysql.createConnection({
     database: 'estore'
 });
 
-// Connect to the mysql server and sql database
-connection.connect(function(err) {
-    if (err) throw err;
-    start();
-});
-
-export var sql = {
+var sqlFunc = {
     lookup : {
         prctAll : function() {
             connection.query(
@@ -102,3 +96,9 @@ export var sql = {
         }
     }
 };
+
+// 
+module.exports = {
+    connection: connection,
+    sqlFunc: sqlFunc,
+}

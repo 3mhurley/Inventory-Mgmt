@@ -1,3 +1,8 @@
 // Export MySQL creds from .env
-export const un = process.env.SQL_USER;
-export const pw = process.env.SQL_PASSWORD;
+const un = process.env.SQL_USER;
+const pw = process.env.SQL_PASSWORD;
+
+module.exports = {
+    un: un,
+    pw: pw,
+}

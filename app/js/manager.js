@@ -2,7 +2,7 @@
 const mysql = require('mysql');
 const inquirer = require('inquirer');
 const cTable = require('console.table');
-import { connection, sql } from 'main';
+import { connection, sql } from 'main.js';
 
 // Connect to the mysql server and sql database
 connection.connect(function(err) {
